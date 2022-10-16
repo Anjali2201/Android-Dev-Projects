@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Rate us"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:autofillHints="Rate out of 5"
+        android:ems="5"
+        android:layout_gravity="center"
+        android:hint="/5"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true" />
+
+        <Button 
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+</LinearLayout>
