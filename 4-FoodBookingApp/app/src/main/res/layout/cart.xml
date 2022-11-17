@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,10 +8,8 @@
     android:padding="10sp"
     tools:context=".MainActivity2"
     tools:layout_editor_absoluteX="0dp"
-    android:background="@color/black"
     tools:layout_editor_absoluteY="0dp">
 
-    >
 
     <TextView
         android:id="@+id/textView"
@@ -20,159 +18,57 @@
         android:text="Cart"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_margin="30sp"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         />
 
-    <RelativeLayout
-        android:id="@+id/pizza1"
-        android:layout_width="wrap_content"
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/trash_5753"
+           android:layout_margin="20sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:background="@color/white"
+           android:id="@+id/imageButton"
+                />
+           
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView"
-
-        >
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza1"
-            tools:ignore="ContentDescription,MissingConstraints"
-            />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cheese Burst"
-            android:fontFamily="cursive"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView"
-            />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price: 200"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView"
-            android:layout_below="@id/textView2"
-            android:fontFamily="sans-serif-condensed-light"
-            />
-
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/pizza2"
-        android:layout_width="wrap_content"
+         />
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="100sp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pizza1"
-        >
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza2"
-            tools:ignore="ContentDescription,MissingConstraints"
-            />
+        android:layout_margin="10sp"
+        app:layout_constraintLeft_toRightOf="@id/list1"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        />
 
-        <TextView
-            android:id="@+id/p2t1"
+        <TextView android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Margherita"
+            android:text="Total"
             android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list1"
             />
 
-        <TextView
-            android:id="@+id/p2t2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price: 200"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView2"
-            android:layout_below="@id/p2t1"
-            android:fontFamily="sans-serif-light"
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/pizza3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pizza2"
-        >
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza3"
-            tools:ignore="ContentDescription,MissingConstraints"
-            />
-
-        <TextView
-            android:id="@+id/p3t1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Farm House"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView3"
-            />
-
-        <TextView
-            android:id="@+id/p3t2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price: 200"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView3"
-            android:layout_below="@id/p3t1"
-            android:fontFamily="sans-serif-light"
-
-            />
-    </RelativeLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

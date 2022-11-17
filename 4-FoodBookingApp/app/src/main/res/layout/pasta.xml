@@ -40,7 +40,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="30sp"
             android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza1"
+            android:background="@drawable/pasta"
             tools:ignore="ContentDescription,MissingConstraints"
             />
 
@@ -48,8 +48,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cheese Burst"
-            android:fontFamily="cursive"
+            android:text="White Sauce Pasta"
             android:textSize="20sp"
             android:textColor="@color/white"
             android:layout_marginTop="30sp"
@@ -63,7 +62,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price: 200"
+            android:text="400"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginLeft="10sp"
@@ -73,105 +72,20 @@
             android:layout_below="@id/textView2"
             android:fontFamily="sans-serif-condensed-light"
             />
-
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/pizza2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pizza1"
-        >
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza2"
-            tools:ignore="ContentDescription,MissingConstraints"
-            />
-
-        <TextView
-            android:id="@+id/p2t1"
+        <Button android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Margherita"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30sp"
+            android:text="Add to cart"
+            android:textColor="@color/black"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView2"
-            />
-
-        <TextView
-            android:id="@+id/p2t2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price: 200"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView2"
-            android:layout_below="@id/p2t1"
-            android:fontFamily="sans-serif-light"
+            android:backgroundTint="@color/white"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/textView3"
             />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/pizza3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pizza2"
-        >
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:background="@drawable/pizza3"
-            tools:ignore="ContentDescription,MissingConstraints"
-            />
-
-        <TextView
-            android:id="@+id/p3t1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Farm House"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="30sp"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView3"
-            />
-
-        <TextView
-            android:id="@+id/p3t2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Price: 200"
-            android:textSize="15sp"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="10sp"
-            android:layout_marginBottom="10sp"
-            android:layout_toRightOf="@id/imageView3"
-            android:layout_below="@id/p3t1"
-            android:fontFamily="sans-serif-light"
-
-            />
-    </RelativeLayout>
 
 
 
