@@ -15,7 +15,6 @@ public class Cart {
     public static ArrayList<String> getCartItems() {
         return cartItems;
     }
-
     public static ArrayList<Integer> getCartPrices() {
         return cartPrices;
     }
