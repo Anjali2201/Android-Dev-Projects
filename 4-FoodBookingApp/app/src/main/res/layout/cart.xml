@@ -8,9 +8,8 @@
     android:padding="10sp"
     tools:context=".MainActivity2"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="0dp">
-
-
+    tools:layout_editor_absoluteY="0dp"
+    >
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
         android:layout_margin="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         />
 
        <ImageButton
@@ -35,8 +33,6 @@
            android:background="@color/white"
            android:id="@+id/imageButton"
                 />
-           
-
     <ListView
         android:id="@+id/list1"
         android:layout_width="150sp"
@@ -66,9 +62,15 @@
             app:layout_constraintTop_toBottomOf="@id/list1"
             />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_marginTop="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total"
+        />
 
 
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
